@@ -241,25 +241,38 @@ body{
 	}
 
 /*RESUME.HTML STYLES*/
-	.resume-header{
-		padding: 5% 0;
-		text-align: center;
-	}
 
-	.resume-row{
-		padding-top: 10%;
-	}
+	#resume{
+		display: none;
 
-	.resumeleft{
-		float: left;
-		width: 10%;
-		font-size: 40px;
-	}
+		.container{
+			width:75%;
+			margin: 0 auto;
+			position: relative;
+		    float: left;
+		    padding: 0;
+		}
 
-	.resumeright{
-		float: right;
-		width: 65%;
-		border-left: 1px solid #000;
-		padding-left: 5%;
-	}	
+		.resume-header{
+			padding: 5% 0;
+			text-align: center;
+		}
+
+		.resume-row{
+			padding-top: 10%;
+		}
+
+		.resumeleft{
+			float: left;
+			width: 10%;
+			font-size: 40px;
+		}
+
+		.resumeright{
+			float: right;
+			width: 65%;
+			border-left: 1px solid #000;
+			padding-left: 5%;
+		}	
+	}
 }

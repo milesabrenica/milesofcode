@@ -10,27 +10,26 @@
 	<link rel="shortcut icon" type="image/png" href="imgs/favicon.png"/>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="js/projects.js"></script>
 	<script type="text/javascript" src="js/site.js"></script>
 
 </head>
 <body>
 <div class="main">
-	<div class="container">
-		<header>
-			<a href="#about">
-				<img src="imgs/about.png">
-				<h3>ABOUT</h3>
-			</a>
-			<a href="#work">
-				<img src="imgs/work.png">
-				<h3>WORK</h3>
-			</a>
-			<a href="#contact">
-				<img src="imgs/contact.png">
-				<h3>CONTACT</h3>
-			</a>
-		</header>	
+	<header>
+		<a class="nav-about" href="#about">
+			<img src="imgs/about.png">
+			<h3>ABOUT</h3>
+		</a>
+		<a class="nav-work" href="#work">
+			<img src="imgs/work.png">
+			<h3>WORK</h3>
+		</a>
+		<a class="nav-contact" href="#contact">
+			<img src="imgs/contact.png">
+			<h3>CONTACT</h3>
+		</a>
+	</header>	
+	<div id="homepage" class="container">
 		<div class="section" id="about">
 			<div class="content-head">
 				<h1>Miles Abrenica</h1>
@@ -84,13 +83,63 @@
 	</div>
 	<div id="sidebar">
 		<div class="view">
-			<a href="resume.html">
+			<div id="resume-link" href="#resume">
 				<img src="imgs/resume.png">
 				<h2>RESUME</h2>
 				<h3>View Profile</h3>
-			</a>
+			</div>
 		</div>
 	</div>
+	<div id="resume" class="container">
+		<div class="container">
+		<div class="resume-header">
+			<h1>MILES ABRENICA</h1>	
+			<p>milesabrenica@gmail.com &bullet; 818.599.9209</p>
+			<p>LOS ANGELES, CA</p>
+		</div>
+		
+		<div class="resume-row">
+			<h3 class="resumeleft">EDUCATION</h3>
+			<h2 class="resumeright">General Assembly -- November 2014-February 2015</h2>
+			<h2 class="resumeright">Certificate - Front End Web Developer </h2>
+			<ul class="resumeright">
+				<li>HTML/CSS, </li>
+				<li>Javascript, </li>
+				<li>jQuery, </li>
+				<li>AngularJs, </li>
+				<li>API development, </li>
+				<li>Sass, </li>
+				<li>PSD slicing, </li>
+				<li>Wordpress, </li>
+				<li>git workflow, </li>
+				<li>MySQL, </li>
+				<li>responsivle design, </li>
+				<li>ajax, </li>
+				<li>SPA development</li>
+			</ul>
+		<div class="clear"></div>
+		</div>
+
+		<div class="resume-row">
+			<h3 class="resumeleft">WORK EXPERIENCE</h3>
+			<h2 class="resumeright">Junior Front End Web Developer at LIONSTEP MEDIA</h2>
+			<ul class="resumeright">
+				
+				<li>Slicing PSDs and creating from scratch, production-ready javascript driven HTML/CSS pages including microsites, blogs, custom image gallery sliders, blog pages, form submissions</li>
+
+				<li>Worked effectively with designer and PM to bring wireframes and PSD designs to launch ready pages</li>
+
+				<li>Very familiar with the fast paced nature of the interactive agency environment and willing to put in the extra hours to meet any project deadlines or sprints</li>
+
+				<li>Languages/tools: HTML/CSS, Javascript, jQuery, Git, SASS/LESS, API integration, WordPress, AJAX, responsive design, trello, jira</li>
+
+			</ul>
+		</div>
+	</div>
+	</div>
 </div>
+
+<script src="js/projects.js"></script>
+
 </body>
 </html>

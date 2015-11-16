@@ -168,17 +168,25 @@ body {
         width: 20%; }
   body .clear {
     clear: both; }
-  body .resume-header {
-    padding: 5% 0;
-    text-align: center; }
-  body .resume-row {
-    padding-top: 10%; }
-  body .resumeleft {
-    float: left;
-    width: 10%;
-    font-size: 40px; }
-  body .resumeright {
-    float: right;
-    width: 65%;
-    border-left: 1px solid #000;
-    padding-left: 5%; }
+  body #resume {
+    display: none; }
+    body #resume .container {
+      width: 75%;
+      margin: 0 auto;
+      position: relative;
+      float: left;
+      padding: 0; }
+    body #resume .resume-header {
+      padding: 5% 0;
+      text-align: center; }
+    body #resume .resume-row {
+      padding-top: 10%; }
+    body #resume .resumeleft {
+      float: left;
+      width: 10%;
+      font-size: 40px; }
+    body #resume .resumeright {
+      float: right;
+      width: 65%;
+      border-left: 1px solid #000;
+      padding-left: 5%; }

@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
   
 //NAV LINKS
-$(function() {
+  $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -13,29 +13,55 @@ $(function() {
         return false;
         }
       }
+    });
   });
-});
 
 
-$(".project").click(function(){
-  $(".project-overlay").fadeIn(400);
-  $(".main-nav, .main-nav-scrolled").fadeOut(400);
-  $("body").addClass('no_scroll');
-});
+  $(".project").click(function(){
+    $(".project-overlay").fadeIn(400);
+    $(".main-nav, .main-nav-scrolled").fadeOut(400);
+    $("body").addClass('no_scroll');
+  });
 
-$(".close").click(function(){
-  $("body").removeClass('no_scroll');
-  $(".project-overlay").fadeOut(400);
-  $(".main-nav, .main-nav-scrolled").fadeIn(); 
-});
 
-$(".project-overlay").click(function(){
-  $("body").removeClass('no_scroll');
-  $(".project-overlay").fadeOut(400);
-  $(".main-nav, .main-nav-scrolled").fadeIn();
-});
+  $(".close").click(function(){
+    $("body").removeClass('no_scroll');
+    $(".project-overlay").fadeOut(400);
+    $(".main-nav, .main-nav-scrolled").fadeIn();
+    
+  });
 
-  
+  $(".project-overlay").click(function(){
+    $("body").removeClass('no_scroll');
+    $(".project-overlay").fadeOut(400);
+    $(".main-nav, .main-nav-scrolled").fadeIn();
+  });
+
+
+  $("#resume-link").click(function(){
+    $("#resume").fadeIn(400);
+    $("#sidebar").fadeOut(400);
+    $("#homepage").fadeOut(400);
+  });
+
+  $(".nav-about").click(function(){
+    $("#resume").fadeOut(400);
+    $("#sidebar").fadeIn(400);
+    $("#homepage").fadeIn(400);
+  });
+
+  $(".nav-work").click(function(){
+    $("#resume").fadeOut(400);
+    $("#sidebar").fadeIn(400);
+    $("#homepage").fadeIn(400);
+  });
+
+  $(".nav-contact").click(function(){
+    $("#resume").fadeOut(400);
+    $("#sidebar").fadeIn(400);
+    $("#homepage").fadeIn(400);
+  });
+
 });
 
 // PROJECT GRID
@@ -75,6 +101,3 @@ $('.project').click(function(){
     }
   }
 });
-
-
-
